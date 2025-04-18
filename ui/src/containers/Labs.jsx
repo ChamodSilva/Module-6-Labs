@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { Box, Paper, Typography, ButtonGroup, Button } from "@mui/material";
 import LabOne from "./LabOne";
+import LabTwo from "./LabTwo";
+import LabThree from "./LabThree";
+import LabFour from "./LabFour";
+import LabFive from "./LabFive";
 import TemplateExample from "./TemplateExample";
+import BasicForm from "./BasicForm";
 
 const Labs = () => {
   const [selectedLab, setSelectedLab] = useState(0);
@@ -10,6 +15,9 @@ const Labs = () => {
     { label: "Lab One", callbackFunction: () => setSelectedLab(1) },
     { label: "Lab Two", callbackFunction: () => setSelectedLab(2) },
     { label: "Lab Three", callbackFunction: () => setSelectedLab(3) },
+    { label: "Lab Four", callbackFunction: () => setSelectedLab(4) },
+    { label: "Lab Five", callbackFunction: () => setSelectedLab(5) },
+    { label: "Form", callbackFunction: () => setSelectedLab(6) },
   ];
 
   const labContentHandler = () => {
@@ -19,9 +27,15 @@ const Labs = () => {
       case 1:
         return <LabOne />;
       case 2:
-        return <Typography>Nothing here</Typography>;
+        return <LabTwo />;
       case 3:
-        return <Typography>Nothing here</Typography>;
+        return <LabThree />;
+      case 4:
+        return <LabFour />;
+      case 5:
+        return <LabFive />;
+      case 6:
+        return <BasicForm />;
       default:
         return <Typography>No matching lab</Typography>;
     }

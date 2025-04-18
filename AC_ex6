@@ -1,0 +1,6 @@
+// NOTE AC
+// 1: Products should have products with names, prices and descriptions.
+// 2: Write two components, one for displaying products and one for showing the shopping basket. In your component Folder.
+// 3: Products component, add a button which can add the selected product to the shopping basket.
+// 4: ShoppingBasket.jsx a seperate component to the rest of Products.jsx.
+// 5: ShoppingBasket.jsx should have a function to tally the total of the selected products in the shopping basket.

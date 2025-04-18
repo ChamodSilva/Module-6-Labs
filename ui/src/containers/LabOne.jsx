@@ -1,10 +1,10 @@
 import { Typography, Box } from "@mui/material";
+import Greeting from "../components/Greeting";
 
 const LabOne = () => {
-  return (
-    <Box>
-      <Typography variant="h4">Lab One Content</Typography>
-    </Box>
+  return (    
+    <Greeting name={"Chamod"}>
+    </Greeting>
   );
 };
 
