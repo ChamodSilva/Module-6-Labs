@@ -55,7 +55,7 @@ const Labs = () => {
       </Box>
 
       <Box height={"400px"}>
-        <Paper sx={{ height: "inherit" }}>{labContentHandler()}</Paper>
+        <Paper sx={{ height: "inherit", overflow: "scroll", overflowX: "hidden"}}>{labContentHandler()}</Paper>
       </Box>
     </Box>
   );

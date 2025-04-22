@@ -1,5 +1,5 @@
 import {Box} from '@mui/material';
-import Card from '../components/Card.jsx';
+import Card from '../components/Card.jsx'
 
 function TemplateExample()
 {

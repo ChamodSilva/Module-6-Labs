@@ -3,10 +3,11 @@ import Greeting from "../components/Greeting";
 
 function LabOne()
 {
-  return(
-    <Greeting>
-    </Greeting>
-  );
+    return(
+        <Greeting>
+            <Typography>This is a test message!</Typography>
+        </Greeting>
+    );
 };
 
 export default LabOne;

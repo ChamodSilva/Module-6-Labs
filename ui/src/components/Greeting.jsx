@@ -9,16 +9,19 @@ function Greeting({ name="World", children })
 
     function childrenDisplayHandler()
     {
-        <Box bgcolor={"black"} color={"white"}>
-            {children}
-        </Box>
+        return(
+            <Box>
+                {children}
+            </Box>
+        );
     }
 
     return(
-    <Box>
-
-    </Box>
-    ) <Box>{displayHandler()}</Box>;
+        <Box>
+            {displayHandler()}
+            {childrenDisplayHandler()}
+        </Box>
+    );
 }
 
 export default Greeting;
