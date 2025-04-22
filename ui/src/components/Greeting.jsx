@@ -1,12 +1,11 @@
 import { Box, Typography } from "@mui/material";
 
-function Greeting({ name, children })
+function Greeting({ name="World", children })
 {
     function displayHandler()
     {
-        return name ? (<Typography>Hello, {name}!</Typography>) : (<Typography>Hello!</Typography>);
+        return (<Typography>Hello, {name}!</Typography>);
     };
-    return <Box>{displayHandler()}</Box>;
 
     function childrenDisplayHandler()
     {
@@ -14,8 +13,12 @@ function Greeting({ name, children })
             {children}
         </Box>
     }
+
+    return(
+    <Box>
+
+    </Box>
+    ) <Box>{displayHandler()}</Box>;
 }
 
 export default Greeting;
-
-
