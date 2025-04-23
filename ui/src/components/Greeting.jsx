@@ -22,6 +22,6 @@ function Greeting({ name="World", children })
             {childrenDisplayHandler()}
         </Box>
     );
-}
+};
 
 export default Greeting;
